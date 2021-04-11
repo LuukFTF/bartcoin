@@ -258,6 +258,11 @@ img.avatar:hover {
         flex-direction: row;
         margin: 20px 0;
     }
+
+    img.app {
+        width: 300px;
+        height: auto;
+    }
 }
 
 
