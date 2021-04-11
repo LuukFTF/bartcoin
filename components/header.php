@@ -1,32 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bruh.css"></link>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@900&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/0bc22cc72a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../bartcoinlogo/main.css"></link>
-    <title>BARTCOIN</title>
-</head>
-<body>
-
 <section class="header">
     <nav class="container flex flexrow">
-        <div>
-            <div id="bartcoin">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="100px" height="100px" viewBox="100 100 400 400" xml:space="preserve">
+        <div class="flexitem bartcoin" id="bartcoin">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="100px" height="100px" viewBox="100 100 400 400" xml:space="preserve">
                 <filter id="dropshadow" height="130%">
                 <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
                 <feOffset dx="0" dy="0" result="offsetblur"/>
                 <feFlood flood-color="#63c9ff"/>
                 <feComposite in2="offsetblur" operator="in"/>
                 <feMerge>
-                <feMergeNode/>
-                <feMergeNode in="SourceGraphic"/>
+                    <feMergeNode/>
+                    <feMergeNode in="SourceGraphic"/>
                 </feMerge>
                 </filter>          
                 <path class="path" style="filter:url(#dropshadow)" fill="#000000" d="M446.089,261.45c6.135-41.001-25.084-63.033-67.769-77.735l13.844-55.532l-33.801-8.424l-13.48,54.068
@@ -38,27 +22,21 @@
                     C425.008,305.984,441.655,291.455,446.089,261.45z M368.859,369.754c-10.455,41.983-81.128,19.285-104.052,13.589l18.562-74.404
                     C306.28,314.65,379.774,325.975,368.859,369.754z M379.302,260.846c-9.527,38.187-68.358,18.781-87.442,14.023l16.828-67.489
                     C327.767,212.14,389.234,221.02,379.302,260.846z"/>
-                </svg>
-            </div>
+            </svg>
         </div>
-        <div class="exchange flex flexrow"> 
+        <div class="flexitem exchange flex flexrow subcont"> 
             <div class="flexitem prefix">BCN</div>
-            <div class="flexitem value"><p>€ 0,49963</p></div>
-            <div class="flexitem change">▲ 0,88%</div> 
+            <div class="flexitem value"><p>€ <?php echo number_format(rand(4700, 5300) / 10000.0, 4, ",", ""); ?></p></div>
+            <div class="flexitem change">▲ <?php echo number_format(rand(50, 300) / 100.0, 2, ",", ""); ?>%</div> 
         </div>
-        <div class="flexitem container flex flexrow">
-            <a href="/Exchange" class="flexitem">Get Started</a>
-            <a href="/blog" class="flexitem">Blog</a>
-            <a href="/Exchange" class="flexitem">Exchange</a>
+        <div class="flexitem container flex flexrow subcont">
+            <a href="/exchange" class="flexitem">Get Started</a>
+            <a href="/news" class="flexitem">News</a>
+            <a href="/contact" class="flexitem">Contact</a>
         </div>
-        <div class="flexitem container flex flexrow">
-            <a href="/buy" class="flexitem btn" >Buy</a>
-            <a href="/wallet" class="flexitem btn">Wallet</a>
+        <div class="flexitem container flex flexrow subcont">
+            <a href="/buy" class="flexitem btn" ><i class="fas fa-shopping-cart"></i></a>
+            <a href="/login" class="flexitem btn"><i class="fas fa-key"></i> Login</a>
         </div>
     </nav>
 </section>
-
-<section class="webcontainer">
-kanker
-</section>
-
